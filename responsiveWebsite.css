@@ -15,7 +15,7 @@ header {
   gap: 20px;
 }
 
-.aboutUS {
+.aboutUS, .ourTeam{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,5 +37,12 @@ header {
 
 .rooms img {
   width: 400px;
+}
+
+.ourTeam p {
+  position: relative;
+  top: -35px;
+  width: 400px;
+  text-align: center;
 }
 
