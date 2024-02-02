@@ -21,7 +21,7 @@ header {
   align-items: center;
 }
 
-.aboutText {
+.aboutText, .ourTeam p {
   position: relative;
   top: -35px;
   width: 400px;
@@ -39,10 +39,188 @@ header {
   width: 400px;
 }
 
-.ourTeam p {
-  position: relative;
-  top: -35px;
-  width: 400px;
-  text-align: center;
+.teamPhotos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  gap: 20px;
 }
+
+.teamPhotos i {
+  margin: 10px 0;
+}
+
+.teamPhotos p {
+  margin-top: 100px;
+  align-items: center;
+  font-size: 30px;
+  color: #6b6b6b;
+}
+
+.person-image {
+  width: 200px;
+  height: 200px;
+}
+
+.person-image img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  line-height: 15px;
+  margin: 0;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  background-color: #282828;
+  color: #777;
+  gap: 12px;
+  padding: 10px 0px;
+}
+
+
+.socialIcons span {
+  width: 100%;
+}
+
+.footerMiddle {
+  display: flex;
+  justify-content: center;
+  background-color: #282828;
+  color: #777;
+  text-align: center;
+  gap: 200px;
+}
+
+h6 {
+  color: white;
+}
+
+.footerEnd {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  justify-content: center;
+  text-align: center;
+  color: #6b6b6b;
+}
+
+.footerEnd p {
+  line-height: 5%;
+  font-size: small;
+}
+
+.footerEnd hr {
+  width: 90%;
+  color: #4d48482c;
+}
+
+.fa-brands {
+  color: #999;
+  border-radius: 90px;
+}
+
+/* ___________________________________^^ full screen ^^______________________________*/
+/* ----------------------------------vv less than 100px------------------------------*/
+@media screen and (max-width:1000px) {
+  .teamPhotos p {
+    display: none;
+  }
+}
+
+/* ___________________________________^^ less than 100px ^^__________________________*/
+/* ----------------------------------vv less than 876px------------------------------*/
+ @media screen and (max-width:876px){
+    
+  .rooms img {
+    width: 300px;
+  }
+
+  .rooms p {
+    width: 300px;
+  }
+
+  .teamPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .person-image {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .person-image img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+  .footerMiddle {
+    gap: 100px;
+  }
+  .footerEnd hr {
+    width: 75%;
+    color: #4d48482c;
+  }
+}
+/* ___________________________________^^ less than 876px ^^__________________________*/
+/* ----------------------------------vv less than 833px------------------------------*/
+@media screen and (max-width: 833px){
+  .roomSection {
+    display: block;
+    text-align: center;
+  }
+
+  .rooms img {
+    width: 080%;
+  }
+
+  .rooms p {
+    position: relative;
+    width: 80%;
+    left: 80px;
+  }
+}
+/* ___________________________________^^ less than 833px ^^__________________________*/
+/* ----------------------------------vv less than 673px------------------------------*/
+@media screen and (max-width: 833px){
+  .socialIcons span {
+    display: none;
+  }
+
+  .footerMiddle {
+    display:flex;
+    flex-direction: column;
+    gap: 05px;
+  }
+}
+/* ___________________________________^^ less than 673px ^^__________________________*/
+/* ----------------------------------vv less than 434px------------------------------*/
+@media screen and (max-width: 434px){
+
+  .navigation {
+    display: inline;
+  }
+  
+  .logo img {
+    width:80%;
+  }
+
+  .rooms p {
+    position:static;
+    width: 100%;
+  }
+}
+
 
